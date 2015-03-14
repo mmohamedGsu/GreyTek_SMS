@@ -6,10 +6,13 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import java.awt.*;
 
+
 /**
  *
  * @author Sheldon Gray
  */
+
+//here also add a forgot userName, forgot passWord form
 public class loginGUI2 extends JFrame {
     
     //Global Variables
@@ -20,6 +23,7 @@ public class loginGUI2 extends JFrame {
     private JLabel portalMessage;
     private JPasswordField passText;
     private JTextField userText;
+    private String userName, passWord;
     
     //Lauch GUI
     public loginGUI2() {
@@ -111,13 +115,42 @@ public class loginGUI2 extends JFrame {
         pack();
     }
     
-    //Login Button ActionPerformed method
-    private void loginButtonActionPerformed(ActionEvent e) { 
-        //Add here what you want this button to do.
-        //Currently displays that the button was pressed.
-        JButton source = (JButton) e.getSource();
-        JOptionPane.showMessageDialog(source, source.getText() + " button has been pressed");
-    }                                        
-
+    //Precondition: The RootPane has been loaded adn the Login button has been 
+    //              pressed
+    //Postcondition: If either the userName textbox or passWord textbox is empty
+    //               the user is prompted to enter the field
+    public boolean validForm() {
+         
+        if(userName.equals("")) {
+            
+           JOptionPane.showMessageDialog(rootPane, "Enter a user name");
+           return false;
+        }
+        
+        if(passWord.equals("")) {
+             JOptionPane.showMessageDialog(rootPane, "Enter a password");
+             return false;
+        }
+        
+        return true;
+    }
     
+    //Precondition: The rootPanel has been loaded
+    //Postcondition: The authentication sequence is initated and if sucessful
+    //              "the next panel" is loaded
+    private void loginButtonActionPerformed(ActionEvent e) { 
+        userName = userText.getText();
+        passWord = passText.getText();
+
+        if(validForm()) {
+           
+            Authentication auth = new Authentication(userName, passWord);
+            
+            if(auth.verifyAuth()) {
+                JOptionPane.showMessageDialog(rootPane, "Authentication Sucessful");
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Authentication failed");
+            }   
+        }
+    }                                        
 }
