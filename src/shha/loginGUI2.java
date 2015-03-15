@@ -148,6 +148,9 @@ public class loginGUI2 extends JFrame {
             
             if(auth.verifyAuth()) {
                 JOptionPane.showMessageDialog(rootPane, "Authentication Sucessful");
+                mainGUI2 mainGUI = new mainGUI2();
+                mainGUI.setVisible(true);
+                setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(rootPane, "Authentication failed");
             }   

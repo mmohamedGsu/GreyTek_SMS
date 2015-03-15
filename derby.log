@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Sat Mar 14 11:47:57 EDT 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-014c-18f8-71b9-000007bdf3b8 
-on database directory /Users/MooseMoose/Google Drive/netBeans workSpace/SMS/SMSDB with class loader sun.misc.Launcher$AppClassLoader@4e25154f 
-Loaded from file:/Users/MooseMoose/Google%20Drive/netBeans%20workSpace/SMS/lib/derby.jar
+Sun Mar 15 17:02:10 EDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-014c-1f3e-795f-000007f612f8 
+on database directory C:\Users\Sheldon\Documents\NetBeansProjects\GreyTek_SMS\SMSDB with class loader sun.misc.Launcher$AppClassLoader@6d06d69c 
+Loaded from file:/C:/Users/Sheldon/Documents/NetBeansProjects/GreyTek_SMS/lib/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_05-b13
-user.dir=/Users/MooseMoose/Google Drive/netBeans workSpace/SMS
-os.name=Mac OS X
-os.arch=x86_64
-os.version=10.10
+java.runtime.version=1.8.0_11-b12
+user.dir=C:\Users\Sheldon\Documents\NetBeansProjects\GreyTek_SMS
+os.name=Windows 8.1
+os.arch=amd64
+os.version=6.3
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
