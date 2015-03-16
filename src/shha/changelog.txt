@@ -1,0 +1,17 @@
+SMS Change Log
+
+3-7-15  - Created the Login GUI - Sheldon
+
+3-15-15 - When the DB authenticates it now displays the Main GUI. - Sheldon
+3-15-15 - Changed the "Look and Feel" of the program. Just a style effect. - Sheldon
+3-15-15 - Created Main GUI for after login - Sheldon
+3-15-15 - Added Patients Button functionality (Just displays a TextPane currently) - Sheldon
+3-15-15 - Added Admin Button functionality - Sheldon
+3-15-15 - Added Add User Button functionality - Sheldon
+3-15-15 - Added Add User Panel/Form - Sheldon
+3-15-15 - Add User > Save, Cancel button functionality (DB functions needed) - Sheldon
+
+3-16-15 - Added Employee Button functionality - Sheldon
+3-16-15 - Added Employee View Panel/Form - Sheldon
+3-16-15 - Added Employee > View Button functionality - Sheldon
+3-16-15 - Employee View > Save, Edit, Cancel button functionality (DB functions needed) - Sheldon

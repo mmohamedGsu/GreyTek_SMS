@@ -36,6 +36,7 @@ public class loginGUI2 extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
         
+        
         //Component variables
         userLabel = new JLabel();
         passLabel = new JLabel();
@@ -151,6 +152,7 @@ public class loginGUI2 extends JFrame {
                 mainGUI2 mainGUI = new mainGUI2();
                 mainGUI.setVisible(true);
                 setVisible(false);
+                
             } else {
                 JOptionPane.showMessageDialog(rootPane, "Authentication failed");
             }   
